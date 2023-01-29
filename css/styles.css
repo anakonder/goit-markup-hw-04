@@ -305,6 +305,7 @@ body {
 }
 
 .benefit-icon-wrap {
+  margin-bottom: 8px;
   padding: 24px 100px;
 
   background-color: var(--light);
@@ -415,20 +416,22 @@ body {
 
 .customers-link {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 168px;
   height: 88px;
+  color: var(--subtle-text);
 
   border: 1px solid var(--subtle-text);
   border-radius: 4px;
 }
 
 .customers-icon {
-  fill: var(--subtle-text);
+  fill: currentColor;
 }
-.customers-link:hover .customers-icon {
-  fill: var(--pressed-state);
-  border: 1px solid var(--pressed-state);
-  border-radius: 4px;
+.customers-link:hover {
+  color: var(--pressed-state);
+  border-color: var(--pressed-state);
 }
 
 /**
